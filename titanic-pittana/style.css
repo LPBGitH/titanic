@@ -1,0 +1,151 @@
+body{
+    background: url(img/sea-background.jpg);
+    background-attachment: fixed;
+}
+
+
+.title{
+    font-family: 'Minecrafter Alt', sans-serif;
+
+}
+
+
+
+a:link { 
+    text-decoration: none; 
+    color: black;
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none;
+    color: rgb(206, 206, 206); 
+}
+
+a:active {
+    text-decoration: none; 
+}
+
+
+
+
+.galery a:link { 
+    text-decoration: none; 
+    color: black;
+}
+
+.galery a:visited { 
+    text-decoration: none; 
+}
+
+.galery a img:hover { 
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.galery a:active {
+    text-decoration: none; 
+}
+
+h1{
+    text-align: center;
+    font-family: 'Minecrafter Alt', sans-serif;
+    font-size: 50px;
+}
+
+.title{
+    height: 100px;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+
+    padding: 2.5px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+h2, h3, h4, h5, h6, p, a, li{
+    font-family: 'Minecraft', sans-serif;
+    color: white;
+    
+}
+
+
+
+ul{
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+
+    margin: auto;
+    font-size: 20px;
+}
+
+.main{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    border: none;
+}
+
+.card{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card h4, p{
+    margin: 2.5px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.galery{
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 10px auto;
+
+}
+
+.galery img{
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 60em) {
+    .main{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+
+@media only screen and (max-width: 48em) {
+    .main{
+        grid-template-columns: auto auto;
+    }
+}
